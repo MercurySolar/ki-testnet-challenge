@@ -1,0 +1,39 @@
+global:
+  api-listen-addr: :5183
+  timeout: 30s
+  light-cache-size: 20
+chains:
+- key: IBC
+  chain-id: groot-011
+  rpc-addr: http://127.0.0.1:28657
+  account-prefix: rizon
+  gas-adjustment: 1.4
+  gas-prices: 0.0001uatolo
+  trusting-period: 48h
+- key: IBC
+  chain-id: kichain-t-4
+  rpc-addr: https://rpc-challenge.blockchain.ki:443
+  account-prefix: tki
+  gas-adjustment: 1.4
+  gas-prices: 0.0001utki
+  trusting-period: 48h
+paths:
+  transfer:
+    src:
+      chain-id: kichain-t-4
+      client-id: 07-tendermint-9
+      connection-id: connection-14
+      channel-id: channel-56
+      port-id: transfer
+      order: UNORDERED
+      version: ics20-1
+    dst:
+      chain-id: groot-011
+      client-id: 07-tendermint-24
+      connection-id: connection-21
+      channel-id: channel-18
+      port-id: transfer
+      order: UNORDERED
+      version: ics20-1
+    strategy:
+      type: naive
