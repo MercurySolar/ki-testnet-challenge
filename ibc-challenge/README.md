@@ -247,7 +247,7 @@ After that you can tranfer tokens between networks from any wallet on one chain 
 kid tx ibc-transfer transfer <path_name> <channel-N> rizon1NetworkAddress 100utki --from <Key> --chain-id kichain-t-4
 ```
 
-For out configuration this command will looks like:
+For out configuration this command will look like:
 ```bash
 kid tx ibc-transfer transfer  transfer channel-56 rizon1c78wk39xqckygwdvrct7yj5usqs9092w5xwjgh 9utki --from Mercury --chain-id kichain-t-4
 ```
