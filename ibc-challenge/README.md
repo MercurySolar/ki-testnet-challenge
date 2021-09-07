@@ -6,8 +6,8 @@ In order to use the Inter-Blockchain Communication Protocol (IBC) we must first 
 In our example we will use testnet Rizon.
 
 So we need to
-* access to the RPC Kichain (local node runing or public accessible https://rpc-challenge.blockchain.ki/)
-* access to RPC Rizon (we will run local node)
+* access to the RPC Kichain (you can run local node or use testnet public RPC https://rpc-challenge.blockchain.ki/)
+* access to RPC Rizon (you can run local node)
 * some tokens in each network, which we will have to forward to the addresses created for the relayer in each network
 * The relayer program itself.In our example we will use the official relayer from the Cosmos project https://github.com/cosmos/relayer.git.
 
